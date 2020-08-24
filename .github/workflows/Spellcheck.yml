@@ -22,13 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
        steps:
-        - uses: actions/checkout@v2
-          with:
-            fetch-depth: 1
-        - uses: ./.github/actions/spell-check
-          env:
-            PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-       
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-   
+           - uses: check-spelling/check-spelling@0.0.16-alpha
+           - env:
+               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

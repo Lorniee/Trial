@@ -18,7 +18,7 @@ matrix:
 ---
            
  name: Spellcheck Action
-  on: push
+  on:  [push]
   jobs:
    build:
      name: Spellcheck

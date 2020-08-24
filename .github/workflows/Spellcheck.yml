@@ -28,7 +28,7 @@ jobs:
 
     # Runs a single command using the runners shell
       - name: SpellCheck
-      - uses: ./github/actions/spell-check
+        uses: ./github/actions/spell-check
         env: 
           key: ${{ secrets.GITHUB_TOKEN }}
         

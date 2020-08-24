@@ -1,6 +1,6 @@
+  
 name: Spellcheck Action
 on: push
-
 jobs:
   build:
     name: Spellcheck
@@ -9,5 +9,4 @@ jobs:
     - uses: actions/checkout@master
     - uses: rojopolis/spellcheck-github-actions@0.5.0
       name: Spellcheck
-  
-
+      

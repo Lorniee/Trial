@@ -31,6 +31,9 @@ jobs:
         uses: ./github/actions/spell-check
         env: 
           key: ${{ secrets.GITHUB_TOKEN }}
+          uses: actions/checkout@v2
+        with:
+           fetch-depth: 0
         
     
     # Runs a set of commands using the runners shell
